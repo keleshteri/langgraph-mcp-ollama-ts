@@ -1,0 +1,38 @@
+{
+  "name": "langgraph-mcp-ollama-ts",
+  "version": "1.0.0",
+  "description": "Integration of LangGraph, MCP, and Ollama in TypeScript",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node src/index.ts",
+    "dev": "nodemon --exec ts-node src/index.ts",
+    "test": "ts-node src/index.ts 'What is the weather in New York?'"
+  },
+  "keywords": [
+    "langgraph",
+    "mcp",
+    "ollama",
+    "ai",
+    "chatbot",
+    "typescript"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@langchain/community": "^0.3.41",
+    "@langchain/core": "^0.3.48",
+    "@langchain/langgraph": "^0.2.67",
+    "@langchain/openai": "^0.5.7",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "zod": "^3.24.3"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.1",
+    "@types/node": "^22.15.0",
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
