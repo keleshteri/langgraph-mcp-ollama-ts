@@ -258,6 +258,7 @@ if (require.main === module) {
     // Handle CTRL+C
     rl.on('SIGINT', () => {
       console.log('\nGoodbye!');
+      rl.close();
       process.exit(0);
     });
   }
