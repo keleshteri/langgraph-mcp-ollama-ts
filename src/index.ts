@@ -248,14 +248,14 @@ if (require.main === module) {
           }
         }
       } catch (error) {
-        console.error('\nError:', error);
+        console.error('Error:', error);
       }
       
       // Show prompt for next input
       rl.prompt();
     });
     
-    // Handle CTRL+C
+    // Handle Ctrl+C gracefully
     rl.on('SIGINT', () => {
       console.log('\nGoodbye!');
       rl.close();
