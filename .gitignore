@@ -1,0 +1,14 @@
+# Node modules
+node_modules
+
+# Dist
+dist
+
+# Environment variables
+.env
+.env.*
+
+# Logs
+logs
+*.log
+npm-debug.log*
